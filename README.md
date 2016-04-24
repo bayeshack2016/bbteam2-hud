@@ -3,6 +3,7 @@
 #How can **data** help communities thrive?
 ### Department of Housing and Urban Development
 Presented by What Works Cities and Bloombergs
+Made with love by: Xiaomin Wei, Joey Hu, Armin Burgmeier, Luke Babich and Nick Madrid.
 
 # What we hope to solve
 Housing inequality is present in cities across the United States, rendering low income families unable to obtain affordable housing. Lack of fair housing opportunities is just one of the problems communities face: many people also lack access to transportation and services within the community.
