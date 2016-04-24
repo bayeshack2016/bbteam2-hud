@@ -45,6 +45,15 @@ The Housing Inventory also reports the annual net gain in housing units citywide
 
 ![](zillow_pricing.png)
 
+- We continued our analysis by using the same addresses found in the Housing Inventory data and cross referencing them with [SocketSite](http://www.socketsite.com/) is a popular site for people to read and talk about the San Francisco Real Estate market.
+- We scrapped SocketSite searching for the address name in the article title or within the body.
+- When a positive match was found we captured the comments section.
+- Comments were used to perform both a topic and sentimate analyisis.
+- You are able to see which properties are associated with specifc topic areas. Furthermore, the color indicates how often a given topic was talked about for a given bulding. This data does not allow you to compare one bulding to another (e.g., parking was more important to one building over another).
+- The data below highlights the `parking` topic area for buildings found in the Housing Inventory from 2011-2014 that also had an article(s) on SocketSite.
+
+![](housing_sentiment.png)
+
 - It's important to know that any building built before June 13, 1979 is required to adhere to [San Francisco's rent control laws](https://www.sftu.org/rentcontrol).
 - Significant work was done to gather buliding information such as year built and assessed value from the [San Francisco Property Information Map](http://propertymap.sfplanning.org/).
 - We took a random sampling of San Francicos's 200,000+ buildings and plotted over 1,700 buildings with color indicating the year they were built. While not comprehensive, it is a representative sample.
@@ -52,16 +61,6 @@ The Housing Inventory also reports the annual net gain in housing units citywide
 - `Dark Green` = older building
 
 ![](property_sampling.png)
-
-- We continued our analysis by using the same addresses found in the Housing Inventory data and cross referencing them with [SocketSite](http://www.socketsite.com/) is a popular site for people to read and talk about the San Francisco Real Estate market.
-- We scrapped SocketSite searching for the address name in the article title or within the body. 
-- When a positive match was found we captured the comments section.
-- Comments were used to perform both a topic and sentimate analyisis.
-- You are able to see which properties are associated with specifc topic areas. Furthermore, the color indicates how often a given topic was talked about for a given bulding. This data does not allow you to compare one bulding to another (e.g., parking was more important to one building over another).
-- The data below highlights the `parking` topic area for buildings found in the Housing Inventory from 2011-2014 that also had an article(s) on SocketSite.
-
-![](housing_sentiment.png) 
-
 
 # Challenges faced
 
