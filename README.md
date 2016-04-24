@@ -1,8 +1,8 @@
 ![](https://horseradish.s3.amazonaws.com/CACHE/images/photos/66/7f/42bf3e704747/image-54e7656359e25-default-800.png)
 
-# Department of Housing and Urban Development
-### Presented by Bloomberg and What Works Cities
-How can **data** help communities thrive?
+#How can **data** help communities thrive?
+### Department of Housing and Urban Development
+Presented by What Works Cities and Bloombergs
 
 # What we hope to solve
 Housing inequality is present in cities across the United States, rendering low income families unable to obtain affordable housing. Lack of fair housing opportunities is just one of the problems communities face: many people also lack access to transportation and services within the community.
@@ -23,6 +23,8 @@ The Housing Inventory also reports the annual net gain in housing units citywide
 - [2013 Housing Inventory](https://data.sfgov.org/Housing-and-Buildings/2013-Housing-Inventory/e7d3-dxh5)
 - [2012 Housing Inventory](https://data.sfgov.org/Housing-and-Buildings/2012-Housing-Inventory/4xa2-t52k)
 - [2011 Housing Inventory](https://data.sfgov.org/Housing-and-Buildings/2011-Housing-Inventory/mpcm-79w2)
+- [Zillow API](http://www.zillow.com/howto/api/APIOverview.htm)
+- [San Francisco Property Information Map](http://propertymap.sfplanning.org/)
 
 # What we actually solved and interesting things learned
 
@@ -47,11 +49,18 @@ The Housing Inventory also reports the annual net gain in housing units citywide
 - Significant work was done to gather buliding information such as year built and assessed value from the [San Francisco Property Information Map](http://propertymap.sfplanning.org/).
 - We took a random sampling of San Francicos's 200,000+ buildings and plotted over 1,700 buildings with color indicating the year they were built. While not comprehensive, it is a representative sample.
 
-- `Darke Green` = older building
+- `Dark Green` = older building
 
 ![](property_sampling.png)
 
+- We continued our analysis by using the same addresses found in the Housing Inventory data and cross referencing them with [SocketSite](http://www.socketsite.com/) is a popular site for people to read and talk about the San Francisco Real Estate market.
+- We scrapped SocketSite searching for the address name in the article title or within the body. 
+- When a positive match was found we captured the comments section.
+- Comments were used to perform both a topic and sentimate analyisis.
+- You are able to see which properties are associated with specifc topic areas. Furthermore, the color indicates how often a given topic was talked about for a given bulding. This data does not allow you to compare one bulding to another (e.g., parking was more important to one building over another).
+- The data below highlights the `parking` topic area for buildings found in the Housing Inventory from 2011-2014 that also had an article(s) on SocketSite.
 
+![](housing_sentiment.png) 
 
 
 # Challenges faced
