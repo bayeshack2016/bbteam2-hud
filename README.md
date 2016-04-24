@@ -2,7 +2,7 @@
 
 #How can **data** help communities thrive?
 ### Department of Housing and Urban Development
-Presented by What Works Cities and Bloombergs
+Presented by What Works Cities and Bloomberg
 Made with love by: Xiaomin Wei, Joey Hu, Armin Burgmeier, Luke Babich and Nick Madrid.
 
 # What we hope to solve
