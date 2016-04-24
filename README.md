@@ -36,34 +36,31 @@ The Housing Inventory also reports the annual net gain in housing units citywide
 
 ![](net_change_graph.png)
 
--We then took that same data for a given year (addresses that gained/removed units) and searched Zillow for current rents. Data was normalzied by price per square foot.
+- We then took that same data for a given year (buildings where units were added/removed) and searched Zillow for current rents. Data was normalzied by price per square foot.
 
 - `Bright Red` = units that are the most expensive (on a price per square foot basis)
-- `Black` = unites that are the least expensive
+- `Black` = units that are the least expensive
 
 ![](zillow_pricing.png)
 
+- It's important to know that any building built before June 13, 1979 is required to adhere to [San Francisco's rent control laws](https://www.sftu.org/rentcontrol).
+- Significant work was done to gather buliding information such as year built and assessed value from the [San Francisco Property Information Map](http://propertymap.sfplanning.org/).
+- We took a random sampling of San Francicos's 200,000+ buildings and plotted over 1,700 buildings with color indicating the year they were built. While not comprehensive, it is a representative sample.
 
+- `Darke Green` = older building
+
+![](property_sampling.png)
 
 
 
 
 # Challenges faced
 
- - Data availability: most recent hosing inventory was as of 2014
- - Data availability: many state and local governments do a great job at providing data visualizations. Challenges arise when that data cannot be easily consumed by a computer. 
+ - Most recent hosing inventory was as of 2014
+ - Many state and local governments do a great job at providing data visualizations. Challenges arise when that data cannot be easily [consumed by a machine](http://egis.hud.gov/affht/). 
 
 # Areas to take this further
 
 - Overlay [Petitions to Rent Board](https://data.sfgov.org/Housing-and-Buildings/Petitions-to-the-Rent-Board/6swy-cmkq) to see if there are specific areas of San Francisco receiving a larger number of reports (either from tenants or landlords)
 
-
-# Gaps in the analysis/data
-
-# Technical stack (how it was built)
-
-- The mapping functionality relies heavily on a the recently open sourced [Jupyter Notebook widget for leaflet maps](https://github.com/ellisonbg/ipyleaflet).
-
-- Significant work was done to gather buliding information such as year built and assessed value from the [San Francisco Property Information Map](http://propertymap.sfplanning.org/).
-
-
+- Explore any correlation between [Airbnb listings](http://all-about-airbnb.com/post/127856658166/airbnb-public-api-coming-soon) and [changes in inflation/rents](http://www.bls.gov/eag/eag.ca_sanfrancisco_msa.htm)  as well as [eviction notices](https://data.sfgov.org/Housing-and-Buildings/Eviction-Notices/5cei-gny5). 
