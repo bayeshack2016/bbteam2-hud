@@ -48,7 +48,7 @@ The Housing Inventory also reports the annual net gain in housing units citywide
 - We continued our analysis by using the same addresses found in the Housing Inventory data and cross referencing them with [SocketSite](http://www.socketsite.com/) is a popular site for people to read and talk about the San Francisco Real Estate market.
 - We scrapped SocketSite searching for the address name in the article title or within the body.
 - When a positive match was found we captured the comments section.
-- Comments were used to perform both a topic and sentimate analyisis.
+- Comments were used to perform both topic and sentiment analysis.
 - You are able to see which properties are associated with specifc topic areas. Furthermore, the color indicates how often a given topic was talked about for a given bulding. This data does not allow you to compare one bulding to another (e.g., parking was more important to one building over another).
 - The data below highlights the `parking` topic area for buildings found in the Housing Inventory from 2011-2014 that also had an article(s) on SocketSite.
 
