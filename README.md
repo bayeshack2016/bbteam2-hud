@@ -32,11 +32,16 @@ The Housing Inventory also reports the annual net gain in housing units citywide
 - `Green` = units were added. `Dark Green` = larger number of units added.
 - `Red` = units were removed. `Dark Red` = larger number of units removed.
 
-- The data show an increase in activity (both net positive and negative) each year from 2011 to 2014
+- The data show an increase in construction activity in each year from 2011 to 2014
 
 ![](net_change_graph.png)
 
+-We then took that same data for a given year (addresses that gained/removed units) and searched Zillow for current rents. Data was normalzied by price per square foot.
 
+- `Bright Red` = units that are the most expensive (on a price per square foot basis)
+- `Black` = unites that are the least expensive
+
+![](zillow_pricing.png)
 
 
 
